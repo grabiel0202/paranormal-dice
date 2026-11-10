@@ -1,0 +1,85 @@
+
+/* Paranormal Dice v0.7 — componentes responsivos do multiplayer */
+
+.v07-segredo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px auto;
+  padding: 12px 14px;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--tema-borda, #653044);
+  background: var(--tema-painel, #1b1420);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--tema-texto, #fff);
+  font-size: 14px;
+}
+
+.v07-segredo input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--tema-destaque, #f04462);
+  flex-shrink: 0;
+}
+
+.v07-historico {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.v07-atualizacao {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 0;
+}
+
+.v07-registro-secreto {
+  border-left: 3px solid #b78bff;
+  padding-left: 12px;
+}
+
+.v07-selo {
+  color: #b78bff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.v07-nome {
+  font-weight: 700;
+  color: var(--tema-destaque, #f04462);
+}
+
+.v07-historico .registro {
+  overflow-wrap: anywhere;
+  gap: 12px;
+}
+
+.v07-historico .registro > span {
+  min-width: 0;
+  flex: 1;
+}
+
+.v07-historico .registro > strong {
+  flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+  .v07-segredo {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+
+  .v07-historico .registro {
+    display: flex;
+    align-items: center;
+  }
+
+  .v07-historico .registro-detalhes {
+    display: block;
+    line-height: 1.5;
+  }
+}
